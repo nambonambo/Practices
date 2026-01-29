@@ -1,29 +1,44 @@
-#first example:
-
-print(10 > 9)
-print(10 == 9)
-print(10 < 9)
-
-#second example:
-
-a = 200
-b = 33
-
-if b > a:
-  print("b is greater than a")
-else:
-  print("b is not greater than a")
-  
-
-#third example:
+#1 example 
 
 print(bool("Hello"))
 print(bool(15))
 
-#4 example:
+#2 example 
 
 x = "Hello"
 y = 15
 
 print(bool(x))
 print(bool(y))
+
+#3 example
+
+bool("abc")
+bool(123)
+bool(["apple", "cherry", "banana"])
+
+#4 example
+
+bool(False)
+bool(None)
+bool(0)
+bool("")
+bool(())
+bool([])
+bool({})
+
+#5 example 
+
+class myclass():
+  def __len__(self):
+    return 0
+
+myobj = myclass()
+print(bool(myobj))
+
+#6 example
+
+def myFunction() :
+  return True
+
+print(myFunction())
